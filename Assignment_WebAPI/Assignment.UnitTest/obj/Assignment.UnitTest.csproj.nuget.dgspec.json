@@ -1,0 +1,396 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.UnitTest\\Assignment.UnitTest.csproj": {}
+  },
+  "projects": {
+    "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.API\\Assignment.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.API\\Assignment.API.csproj",
+        "projectName": "Assignment.API",
+        "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.API\\Assignment.API.csproj",
+        "packagesPath": "C:\\Users\\hemant.mohapatra\\.nuget\\packages\\",
+        "outputPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hemant.mohapatra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/5xYzMMHcCY5DKjGjKzs4i2AzFOvRk1JcRucAPy7RdehIQmaKgu/api": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Entity\\Assignment.Entity.csproj": {
+                "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Entity\\Assignment.Entity.csproj"
+              },
+              "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Repository\\Assignment.Repository.csproj": {
+                "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Repository\\Assignment.Repository.csproj"
+              },
+              "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Service\\Assignment.Service.csproj": {
+                "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Service\\Assignment.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Entity\\Assignment.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Entity\\Assignment.Entity.csproj",
+        "projectName": "Assignment.Entity",
+        "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Entity\\Assignment.Entity.csproj",
+        "packagesPath": "C:\\Users\\hemant.mohapatra\\.nuget\\packages\\",
+        "outputPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hemant.mohapatra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/5xYzMMHcCY5DKjGjKzs4i2AzFOvRk1JcRucAPy7RdehIQmaKgu/api": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Repository\\Assignment.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Repository\\Assignment.Repository.csproj",
+        "projectName": "Assignment.Repository",
+        "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Repository\\Assignment.Repository.csproj",
+        "packagesPath": "C:\\Users\\hemant.mohapatra\\.nuget\\packages\\",
+        "outputPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hemant.mohapatra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/5xYzMMHcCY5DKjGjKzs4i2AzFOvRk1JcRucAPy7RdehIQmaKgu/api": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Entity\\Assignment.Entity.csproj": {
+                "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Entity\\Assignment.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Service\\Assignment.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Service\\Assignment.Service.csproj",
+        "projectName": "Assignment.Service",
+        "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Service\\Assignment.Service.csproj",
+        "packagesPath": "C:\\Users\\hemant.mohapatra\\.nuget\\packages\\",
+        "outputPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hemant.mohapatra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/5xYzMMHcCY5DKjGjKzs4i2AzFOvRk1JcRucAPy7RdehIQmaKgu/api": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Entity\\Assignment.Entity.csproj": {
+                "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Entity\\Assignment.Entity.csproj"
+              },
+              "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Repository\\Assignment.Repository.csproj": {
+                "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.Repository\\Assignment.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.UnitTest\\Assignment.UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.UnitTest\\Assignment.UnitTest.csproj",
+        "projectName": "Assignment.UnitTest",
+        "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.UnitTest\\Assignment.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\hemant.mohapatra\\.nuget\\packages\\",
+        "outputPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.UnitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hemant.mohapatra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/5xYzMMHcCY5DKjGjKzs4i2AzFOvRk1JcRucAPy7RdehIQmaKgu/api": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.API\\Assignment.API.csproj": {
+                "projectPath": "D:\\Winforms\\Assignments\\Assignment 27-11-2020\\Assignment_WebAPI\\Assignment.API\\Assignment.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.15.2, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\bin\Debug\netcoreapp3.1\Assignment.Service.deps.json
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\bin\Debug\netcoreapp3.1\Assignment.Service.dll
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\bin\Debug\netcoreapp3.1\Assignment.Service.pdb
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\bin\Debug\netcoreapp3.1\Assignment.Entity.dll
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\bin\Debug\netcoreapp3.1\Assignment.Repository.dll
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\bin\Debug\netcoreapp3.1\Assignment.Entity.pdb
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\bin\Debug\netcoreapp3.1\Assignment.Repository.pdb
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\obj\Debug\netcoreapp3.1\Assignment.Service.csprojAssemblyReference.cache
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\obj\Debug\netcoreapp3.1\Assignment.Service.AssemblyInfoInputs.cache
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\obj\Debug\netcoreapp3.1\Assignment.Service.AssemblyInfo.cs
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\obj\Debug\netcoreapp3.1\Assignment.Service.csproj.CoreCompileInputs.cache
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\obj\Debug\netcoreapp3.1\Assignment.Service.csproj.CopyComplete
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\obj\Debug\netcoreapp3.1\Assignment.Service.dll
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Service\obj\Debug\netcoreapp3.1\Assignment.Service.pdb
