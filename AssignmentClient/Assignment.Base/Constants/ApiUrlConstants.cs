@@ -16,6 +16,7 @@ namespace Assignment.Base.Constants
         public const string LoginBaseUrl = "User/Login";
         public const string CheckIfUserExistisBaseUrl = "User/CheckIfUsernameExists";
         public const string GetAllRolesBaseUrl = "User/GetRoles";
+        public const string ChangePasswordBaseUrl = "User/ChangePassword";
 
 
         public const string GetVehiclesBaseUrl = "Vehicle/GetVehicles";

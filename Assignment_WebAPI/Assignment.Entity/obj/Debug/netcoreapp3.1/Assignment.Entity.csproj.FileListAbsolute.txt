@@ -3,6 +3,7 @@ D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Entit
 D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Entity\bin\Debug\netcoreapp3.1\Assignment.Entity.runtimeconfig.dev.json
 D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Entity\bin\Debug\netcoreapp3.1\Assignment.Entity.dll
 D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Entity\bin\Debug\netcoreapp3.1\Assignment.Entity.pdb
+D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Entity\obj\Debug\netcoreapp3.1\Assignment.Entity.csprojAssemblyReference.cache
 D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Entity\obj\Debug\netcoreapp3.1\Assignment.Entity.AssemblyInfoInputs.cache
 D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Entity\obj\Debug\netcoreapp3.1\Assignment.Entity.AssemblyInfo.cs
 D:\Winforms\Assignments\Assignment 27-11-2020\Assignment_WebAPI\Assignment.Entity\obj\Debug\netcoreapp3.1\Assignment.Entity.csproj.CoreCompileInputs.cache

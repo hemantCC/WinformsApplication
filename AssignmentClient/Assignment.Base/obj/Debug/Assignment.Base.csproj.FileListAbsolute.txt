@@ -1,6 +1,7 @@
 D:\Winforms\Assignments\Assignment 27-11-2020\AssignmentClient\Assignment.Base\bin\Debug\Assignment.Base.dll
 D:\Winforms\Assignments\Assignment 27-11-2020\AssignmentClient\Assignment.Base\bin\Debug\Assignment.Base.pdb
 D:\Winforms\Assignments\Assignment 27-11-2020\AssignmentClient\Assignment.Base\obj\Debug\Assignment.Base.Common.UserControls.HomeMdiApplicationInformation.resources
+D:\Winforms\Assignments\Assignment 27-11-2020\AssignmentClient\Assignment.Base\obj\Debug\Assignment.Base.Properties.Resources.resources
 D:\Winforms\Assignments\Assignment 27-11-2020\AssignmentClient\Assignment.Base\obj\Debug\Assignment.Base.csproj.GenerateResource.cache
 D:\Winforms\Assignments\Assignment 27-11-2020\AssignmentClient\Assignment.Base\obj\Debug\Assignment.Base.csproj.CoreCompileInputs.cache
 D:\Winforms\Assignments\Assignment 27-11-2020\AssignmentClient\Assignment.Base\obj\Debug\Assignment.Base.dll

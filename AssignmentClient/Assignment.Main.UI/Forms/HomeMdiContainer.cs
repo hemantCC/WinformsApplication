@@ -1,15 +1,9 @@
 ﻿using Assignment.Base.Common.Helpers;
 using Assignment.Vehicle;
-using Assignment.Vehicle.Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Assignment.Main.UI.Forms
@@ -54,6 +48,10 @@ namespace Assignment.Main.UI.Forms
                 }
             }
         }
-       
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CommonFormHelper.GetFormInstance(typeof(ChangePassword), this).Show();
+        }
     }
 }

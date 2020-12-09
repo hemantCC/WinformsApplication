@@ -9,6 +9,13 @@ namespace Assignment.Service.Interfaces
     public interface IUserService
     {
         /// <summary>
+        /// Changes the password.
+        /// </summary>
+        /// <param name="changePassData">The change pass data.</param>
+        /// <returns></returns>
+        Task<bool> ChangePassword(ChangePasswordViewModel changePassData);
+
+        /// <summary>
         /// Posts the user asynchronous.
         /// </summary>
         /// <param name="userViewModel">The user view model.</param>

@@ -21,13 +21,13 @@ namespace Assignment.Main.UI
 
             // Add handler to handle the exception raised by main threads
             Application.ThreadException +=
-            new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
+            new ThreadExceptionEventHandler(Application_ThreadException);
 
             // Add handler to handle the exception raised by additional threads
             AppDomain.CurrentDomain.UnhandledException +=
             new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
 
-            Application.Run(new HomeMdiContainer());
+            Application.Run(new MainMdiContainer());
         }
             static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
             {

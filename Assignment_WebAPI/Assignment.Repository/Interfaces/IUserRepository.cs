@@ -1,4 +1,5 @@
-﻿using Assignment.Entity.Entities.DataEntities;
+﻿using Assignment.Entity.Entities.BusinessEntities;
+using Assignment.Entity.Entities.DataEntities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,13 @@ namespace Assignment.Repository.Interfaces
 {
     public interface IUserRepository
     {
+        /// <summary>
+        /// Changes the password.
+        /// </summary>
+        /// <param name="changePassData">The change pass data.</param>
+        /// <returns></returns>
+        Task<bool> ChangePassword(ChangePasswordViewModel changePassData);
+
         /// <summary>
         /// Posts the user asynchronous.
         /// </summary>

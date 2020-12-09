@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Assignment.Entity.Entities.DataEntities;
 using Assignment.Repository.Constants;
@@ -52,14 +53,20 @@ namespace Assignment.API
             services.AddTransient<IDbConnectionProvider,DbConnectionProvider>();
 
             //Swagger Setup
-            services.AddSwaggerGen(c =>
+            services.AddSwaggerGen(options =>
             {
-                c.SwaggerDoc("v0.1", new OpenApiInfo { Title = "My API", Version = "v0.1" });
+                options.SwaggerDoc("v2", new OpenApiInfo
+                {
+                    Title = "Place Info Service API",
+                    Version = "v2",
+                    Description = "Sample service for Learner",
+                });
             });
 
             //Provide connection string to repository
             services.AddSingleton<IConfiguration>(Configuration);
             ConfigurationConstant.ConnectionString = Configuration.GetConnectionString("DefaultConnectionString");
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -80,10 +87,7 @@ namespace Assignment.API
             });
 
             app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("v1/swagger.json", "MyAPI V1");
-            });
+            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "PlaceInfo Services"));
         }
     }
 }

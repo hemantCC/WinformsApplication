@@ -33,6 +33,22 @@ namespace Assignment.API.Controllers
 
         #region Public Controller Methods
 
+        /// <summary>
+        /// Changes the password.
+        /// </summary>
+        /// <param name="userChangePassData">The user change pass data.</param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("ChangePassword")]
+        public async Task<IActionResult> ChangePassword(ChangePasswordViewModel userChangePassData)
+        {
+            bool result = await _userService.ChangePassword(userChangePassData);
+            if (result == true)
+            {
+                return Ok("User Added Successfully.");
+            }
+            return BadRequest("Something went wrong!");
+        }
 
         /// <summary>
         /// Posts the user asynchronous.

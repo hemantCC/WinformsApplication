@@ -1,5 +1,7 @@
-﻿using Assignment.Base.Common.Helpers;
+﻿using Assignment.Base.Common.Global;
+using Assignment.Base.Common.Helpers;
 using Assignment.Base.Constants;
+using Assignment.Base.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -68,6 +70,7 @@ namespace Assignment.Main.UI.Forms
                 HttpResponseMessage response = taskResponse.GetAwaiter().GetResult();
                 if (response.IsSuccessStatusCode)
                 {
+                    GlobalInfo.CurrentUser = new UserInfo("",textBoxUsername.Text);
                     HomeMdiContainer home = new HomeMdiContainer();
                     home.Show();
                     _mdiParent.Hide();

@@ -34,11 +34,6 @@ namespace Assignment.Vehicle
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonDelete = new Assignment.Base.Common.CustomControls.ModernFlatButton();
-            this.buttonEdit = new Assignment.Base.Common.CustomControls.ModernFlatButton();
-            this.buttonNew = new Assignment.Base.Common.CustomControls.ModernFlatButton();
-            this.gradientPanel1 = new Assignment.Base.Common.CustomControls.GradientPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,15 +51,25 @@ namespace Assignment.Vehicle
             this.FuelTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TankCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mileage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gradientPanel1 = new Assignment.Base.Common.CustomControls.GradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonDelete = new Assignment.Base.Common.CustomControls.ModernFlatButton();
+            this.buttonEdit = new Assignment.Base.Common.CustomControls.ModernFlatButton();
+            this.buttonNew = new Assignment.Base.Common.CustomControls.ModernFlatButton();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicles)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewVehicles
             // 
+            this.dataGridViewVehicles.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewVehicles.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewVehicles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewVehicles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -87,10 +92,10 @@ namespace Assignment.Vehicle
             this.Mileage});
             this.dataGridViewVehicles.Cursor = System.Windows.Forms.Cursors.Default;
             this.dataGridViewVehicles.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.dataGridViewVehicles.Location = new System.Drawing.Point(325, 14);
+            this.dataGridViewVehicles.Location = new System.Drawing.Point(19, 12);
             this.dataGridViewVehicles.Name = "dataGridViewVehicles";
             this.dataGridViewVehicles.ReadOnly = true;
-            this.dataGridViewVehicles.Size = new System.Drawing.Size(769, 400);
+            this.dataGridViewVehicles.Size = new System.Drawing.Size(798, 399);
             this.dataGridViewVehicles.TabIndex = 0;
             this.dataGridViewVehicles.Click += new System.EventHandler(this.dataGridViewVehicles_Click);
             // 
@@ -109,84 +114,28 @@ namespace Assignment.Vehicle
             this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSearch.Location = new System.Drawing.Point(594, 16);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(175, 26);
+            this.textBoxSearch.Size = new System.Drawing.Size(192, 26);
             this.textBoxSearch.TabIndex = 4;
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.buttonDelete);
             this.panel1.Controls.Add(this.buttonEdit);
             this.panel1.Controls.Add(this.buttonNew);
             this.panel1.Controls.Add(this.textBoxSearch);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(325, 420);
+            this.panel1.Location = new System.Drawing.Point(19, 428);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(769, 64);
+            this.panel1.Size = new System.Drawing.Size(790, 64);
             this.panel1.TabIndex = 5;
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelete.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.buttonDelete.Location = new System.Drawing.Point(267, 14);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(110, 31);
-            this.buttonDelete.TabIndex = 7;
-            this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
-            // 
-            // buttonEdit
-            // 
-            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEdit.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.buttonEdit.Location = new System.Drawing.Point(135, 14);
-            this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(110, 31);
-            this.buttonEdit.TabIndex = 6;
-            this.buttonEdit.Text = "Edit...";
-            this.buttonEdit.UseVisualStyleBackColor = true;
-            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
-            // 
-            // buttonNew
-            // 
-            this.buttonNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNew.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.buttonNew.Location = new System.Drawing.Point(3, 14);
-            this.buttonNew.Name = "buttonNew";
-            this.buttonNew.Size = new System.Drawing.Size(110, 31);
-            this.buttonNew.TabIndex = 5;
-            this.buttonNew.Text = "New...";
-            this.buttonNew.UseVisualStyleBackColor = true;
-            this.buttonNew.Click += new System.EventHandler(this.buttonNew_Click);
-            // 
-            // gradientPanel1
-            // 
-            this.gradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gradientPanel1.BackgroundImage")));
-            this.gradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gradientPanel1.Controls.Add(this.pictureBox1);
-            this.gradientPanel1.Location = new System.Drawing.Point(10, 14);
-            this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(300, 462);
-            this.gradientPanel1.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Assignment.Vehicle.Properties.Resources.AutomobileLogo;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(273, 194);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridViewVehicles);
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.gradientPanel1);
-            this.panel2.Controls.Add(this.panel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -305,6 +254,76 @@ namespace Assignment.Vehicle
             this.Mileage.Name = "Mileage";
             this.Mileage.ReadOnly = true;
             // 
+            // gradientPanel1
+            // 
+            this.gradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gradientPanel1.BackgroundImage")));
+            this.gradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gradientPanel1.Controls.Add(this.pictureBox1);
+            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Size = new System.Drawing.Size(300, 526);
+            this.gradientPanel1.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Assignment.Vehicle.Properties.Resources.AutomobileLogo;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(273, 194);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDelete.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.buttonDelete.Location = new System.Drawing.Point(267, 14);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(110, 31);
+            this.buttonDelete.TabIndex = 7;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
+            // buttonEdit
+            // 
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEdit.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.buttonEdit.Location = new System.Drawing.Point(135, 14);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(110, 31);
+            this.buttonEdit.TabIndex = 6;
+            this.buttonEdit.Text = "Edit...";
+            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
+            // 
+            // buttonNew
+            // 
+            this.buttonNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNew.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.buttonNew.Location = new System.Drawing.Point(3, 14);
+            this.buttonNew.Name = "buttonNew";
+            this.buttonNew.Size = new System.Drawing.Size(110, 31);
+            this.buttonNew.TabIndex = 5;
+            this.buttonNew.Text = "New...";
+            this.buttonNew.UseVisualStyleBackColor = true;
+            this.buttonNew.Click += new System.EventHandler(this.buttonNew_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.dataGridViewVehicles);
+            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Location = new System.Drawing.Point(306, 12);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(829, 511);
+            this.panel3.TabIndex = 7;
+            // 
             // Vehicles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,9 +337,10 @@ namespace Assignment.Vehicle
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehicles)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.gradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -353,6 +373,7 @@ namespace Assignment.Vehicle
         private System.Windows.Forms.DataGridViewTextBoxColumn FuelTypeName;
         private System.Windows.Forms.DataGridViewTextBoxColumn TankCapacity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mileage;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

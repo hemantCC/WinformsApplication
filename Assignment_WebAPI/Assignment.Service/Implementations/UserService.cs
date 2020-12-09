@@ -3,8 +3,11 @@ using Assignment.Entity.Entities.DataEntities;
 using Assignment.Repository.Interfaces;
 using Assignment.Service.Interfaces;
 using AutoMapper;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -42,6 +45,16 @@ namespace Assignment.Service.Implementations
         #endregion
 
         #region public Methods
+
+        /// <summary>
+        /// Changes the password.
+        /// </summary>
+        /// <param name="changePassData">The change pass data.</param>
+        /// <returns></returns>
+        public async Task<bool> ChangePassword(ChangePasswordViewModel changePassData)
+        {
+            return await _userRepository.ChangePassword(changePassData);
+        }
 
         /// <summary>
         /// Gets the roles asynchronous.
@@ -84,6 +97,28 @@ namespace Assignment.Service.Implementations
         {
             return await _userRepository.UsernameExistsAsync(username);
         }
+
+        #endregion
+
+        #region Private Methods
+
+        private async Task<string> GenerateToken()
+        {
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                    {
+                        new Claim("Role","Admin")
+                    }),
+                Expires = DateTime.UtcNow.AddDays(1),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
+                        "My Secret Key")), SecurityAlgorithms.HmacSha256),
+            };
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var securityToken = tokenHandler.CreateToken(tokenDescriptor);
+            var token = tokenHandler.WriteToken(securityToken);
+            return await Task.FromResult(token);
+        } 
 
         #endregion
     }

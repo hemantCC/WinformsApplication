@@ -6,6 +6,8 @@ namespace Assignment.Repository.Constants
 {
     public class StoredProcedureName
     {
+        #region Vehicles
+
         /// <summary>
         /// Stored Procedure for Getting all Vehicle types
         /// </summary>
@@ -35,5 +37,15 @@ namespace Assignment.Repository.Constants
         /// Stored Procedure for Deleting Vehicle
         /// </summary>
         internal const string DeleteVehicle = "[dbo].[usp_DeleteVehicle]";
+        #endregion
+
+        #region User
+
+        /// <summary>
+        /// Stored Procedure for Deleting Vehicle
+        /// </summary>
+        internal const string ChangePassword = "[dbo].[usp_ChangePassword]";
+
+        #endregion
     }
 }

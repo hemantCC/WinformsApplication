@@ -36,7 +36,7 @@ namespace Assignment.Base.Common.Helpers
             else if(AllFormInstances.ContainsKey(formType) && formType.Name == "VehicleAdd")
             {
                AllFormInstances[formType].Close();
-                returnForm = CreateNewForm(formType, mdiParent, parameters);
+               returnForm = CreateNewForm(formType, mdiParent, parameters);
             }
             else
             {
